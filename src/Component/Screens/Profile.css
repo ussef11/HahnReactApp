@@ -1,0 +1,16 @@
+.profCard{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 39px;
+}
+
+.CardComp{
+    
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+
+}

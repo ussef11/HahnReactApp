@@ -1,0 +1,134 @@
+
+  
+  .head {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 30px;
+  }
+  
+  article {
+    position: relative;
+    perspective: 1000px;
+    width: 300px;
+    height: 300px;
+  }
+  
+  article header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 26px;
+  }
+  
+  article header h2 {
+    font-size: 20px;
+  }
+  
+  article .front,
+  article .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    backface-visibility: hidden;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+      rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+    padding: 24px;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  .input {
+    position: absolute;
+    scale: 0;
+  }
+  
+  .input:checked ~ article .back {
+    transform: rotateY(0);
+  }
+  
+  .input:checked ~ article .front {
+    transform: rotateY(-180deg);
+  }
+  
+  article var {
+    font-style: normal;
+    font-size: 80px;
+    line-height: 1;
+  }
+  
+  article h3 {
+    margin: 0 0 30px;
+    font-weight: 500;
+  }
+  
+  .summary var,
+  .summary h3 {
+    color: #3b82f6;
+  }
+  
+  .overdue var,
+  .overdue h3 {
+    color: #ef4444;
+  }
+  
+  .features var,
+  .features h3 {
+    color: #22c55e;
+  }
+  
+  article h4,
+  article .p {
+    opacity: 0.5;
+    font-size: 20px;
+  }
+  
+  article .p {
+    margin-top: 76px;
+  }
+  
+
+  .dates{
+    font-size: 18px;
+    top: -3px;
+    position: relative;
+    color: #4f4f4f;
+    font-weight: 500;
+  }
+
+
+  .cargo-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust gap as needed */
+  }
+  
+  .cargo-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cargo-label {
+    text-align: left;
+    width: 100px; /* Adjust width as needed */
+    font-weight: bold;
+  }
+  
+  .cargo-value {
+    
+    flex-grow: 1;
+  }
+  
