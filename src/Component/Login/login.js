@@ -67,7 +67,6 @@ const Login = () => {
   
 
 
-  const [dd, setdd] = useState();
   const handlelogin = (e) => {
       e.preventDefault();
     if (username === "" || password === "") {
@@ -141,31 +140,7 @@ const Login = () => {
   };
 
   const handleChangepass = (e) => {
-    // e.preventDefault();
 
-    // if (usernameF === "" || passwordF === ""  || Repassword === "" || newpassword === "") {
-    //   setErrorMsg("Champs is obligatoire ! ");
-    //   setiferr(true);
-    //   return;
-    // }
-    // AuthService.forgotpaass(usernameF, passwordF, newpassword).then(
-    //   () => {
-		// window.location.reload()
-    //     setErrorMsg("Password Has been Changed");
-    //     setiferr(false);
-    //   },
-    //   (error) => {
-    //     const resMessage =
-    //       (error.response &&
-    //         error.response.data &&
-    //         error.response.data.message) ||
-    //       error.message ||
-    //       error.toString();
-    //     console.log(resMessage);
-    //     setiferr(true);
-    //     setErrorMsg(resMessage);
-    //   }
-    // );
   };
 
   const [isSignUp, setIsSignUp] = useState(false);
@@ -206,11 +181,8 @@ useEffect(()=>{
             )}
             <h1 className="titr">Change Password</h1>
             <div className="social-container">
-              {/* <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
-				<a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
-				<a href="#" className="social"><i className="fab fa-linkedin-in"></i></a> */}
+              
             </div>
-            {/* <span>or use your email for registration</span> */}
             {error.username && (
               <span className="span-danger">Username is required</span>
             )}
